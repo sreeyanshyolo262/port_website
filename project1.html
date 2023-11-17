@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Project 1 - Source Code</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Google forms auto filler</h1>
+        </div>
+    </header>
+
+    <section id="source-code">
+        <div class="container">
+            <h2>Source Code</h2>
+            <!-- Add your source code here -->
+            <pre>
+                <code id="codeBlock">
+                    // source code 
+                    import pyautogui
+                    import random
+                    import time
+                    time.sleep(1)
+                    for i in range(0,10):#change this for the amount of responses you want (0,10) for 10 responses
+                    pyautogui.click(581,48)
+                    pyautogui.typewrite("")#PUT THE LINK OF YOUR GOOGLE FORM HERE
+                    pyautogui.typewrite(["enter"])
+                    time.sleep(3)
+                    pyautogui.typewrite(["tab"])
+                    pyautogui.typewrite(["tab"])
+                    pyautogui.typewrite(["tab"])
+                    m=random.randint(1,4)
+                    for n in range(0,m):
+                      pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    l=random.randint(1,2)
+                    for o in range(0,1):
+                       pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    q=random.randint(1,2)
+                    for r in range(0,q):
+                      pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    a=random.randint(1,2)
+                    for x in range(0,a):
+                      pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    b=random.randint(1,4)
+                    for y in range(0,b):
+                      pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    c=random.randint(1,4)
+                    for z in range(0,c):
+                      pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    d=random.randint(1,4)
+                    for w in range(0,d):
+                       pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    e=random.randint(1,2)
+                    for v in range(0,e):
+                          pyautogui.typewrite(["down"])
+                     pyautogui.typewrite(["tab"])
+                    f=random.randint(1,2)
+                    for t in range(0,f):
+                     pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    g=random.randint(1,2)
+                    for s in range(0,g):
+                       pyautogui.typewrite(["down"])
+                    pyautogui.typewrite(["tab"])
+                    h=random.randint(1,2)
+                    for p in range(0,h):
+                      pyautogui.typewrite(["down"])
+                     pyautogui.typewrite(["tab"])
+                     pyautogui.typewrite(["enter"])
+                     time.sleep(1)
+                     pyautogui.click(114,49)
+                     time.sleep(1)
+                     """change the number of loops depending on how many qns you have"""
+    
+    
+
+    
+
+                </code>
+            </pre>
+            <button onclick="copyToClipboard()">Copy Code</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    <script>
+        function copyToClipboard() {
+            const codeBlock = document.getElementById('codeBlock');
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Code copied to clipboard!');
+        }
+    </script>
+</body>
+
+</html>
