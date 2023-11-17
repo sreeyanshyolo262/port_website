@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>sreeyansh - Portfolio</title>
+    <title>sreeyansh dhenavahi - Portfolio</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a first year computer science student and will tell you about all my projects
+            <p>Welcome to my portfolio! I am a first-year computer science student and will tell you about all my projects
                 on this website.
             </p>
         </div>
@@ -29,12 +29,11 @@
         <div class="container">
             <h2>Portfolio</h2>
             <!-- Add your projects here with some animations -->
-            <div class="project" onclick="animateProject(this)">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+            <div class="project" onclick="navigateToProject('project1.html')">
+                <h3>auto google form filler</h3>
+                <p>this code can automatically fill your google forms with random answers(ONLY WORKS WITH MCQ QNS)</p>
             </div>
-            <div class="project" onclick="animateProject(this)">
+            <div class="project" onclick="navigateToProject('project2.html')">
                 <img src="project2.jpg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>Description of Project 2.</p>
@@ -57,6 +56,12 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        function navigateToProject(projectUrl) {
+            window.location.href = projectUrl;
+        }
+    </script>
 </body>
 
 </html>
